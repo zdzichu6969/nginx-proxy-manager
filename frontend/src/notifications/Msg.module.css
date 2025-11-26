@@ -1,14 +1,22 @@
 .toaster {
-	padding: 0;
-	background: transparent !important;
-	box-shadow: none !important;
-	border: none !important;
+    padding: 0;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
 
-	&.toast {
-		border-radius: 0;
-		box-shadow: none;
-		font-size: 14px;
-		padding: 16px 24px;
-		background: transparent;
-	}
+    &.toast {
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 14px;
+        padding: 16px 24px;
+        background: transparent;
+        
+        --tblr-toast-color: var(--tblr-body-color);
+        --tblr-toast-header-color: var(--tblr-body-color);
+        
+        @media (prefers-color-scheme: dark) {
+            --tblr-toast-bg: #2d3139;
+            --tblr-toast-header-bg: rgba(45, 49, 57, 0.85);
+        }
+    }
 }
