@@ -15,7 +15,6 @@ function Msg({ data }: any) {
             break;
     }
 
-
     const toastStyle = {
         '--tblr-toast-color': 'var(--tblr-body-color)',
         '--tblr-toast-header-color': 'var(--tblr-body-color)',
@@ -43,3 +42,4 @@ function Msg({ data }: any) {
     );
 }
 
+export { Msg };
