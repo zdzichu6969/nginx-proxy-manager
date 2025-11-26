@@ -11,12 +11,5 @@
         padding: 16px 24px;
         background: transparent;
         
-        --tblr-toast-color: var(--tblr-body-color) !important;
-        --tblr-toast-header-color: var(--tblr-body-color) !important;
-        
-        @media (prefers-color-scheme: dark) {
-            --tblr-toast-bg: #2d3139 !important;
-            --tblr-toast-header-bg: rgba(45, 49, 57, 0.85) !important;
-        }
     }
 }
